@@ -21,3 +21,4 @@ jobs:
       working-directory: rust/hello-world
     - name: Run tests
       run: cargo test --verbose
+      working-directory: rust/hello-world
