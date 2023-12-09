@@ -20,20 +20,20 @@ jobs:
         run: |
           cargo fmt -- --check
           cargo clippy -- -D warnings
-        work-directory: rust/hello-world
+        working-directory: rust/hello-world
 
       - name: Test
         run: |
           cargo check
           cargo test --all
-         work-directory: rust/hello-world
+         working-directory: rust/hello-world
 
       - name: Build
         run: |
           cargo build --release
-        work-directory: rust/hello-world
+        working-directory: rust/hello-world
 
       - name: Run
         run: |
           cargo run
-        work-directory: rust/hello-world
+        working-directory: rust/hello-world
