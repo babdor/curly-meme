@@ -10,17 +10,26 @@ env:
   CARGO_TERM_COLOR: always
 
 jobs:
-  build:
 
+  build_hello-world:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v3
-    - name: Build
-      run: |
-        cargo build --verbose
-        cargo run
-      working-directory: rust/hello-world
-    - name: Run tests
-      run: cargo test --verbose
-      working-directory: rust/hello-world
+      - uses: actions/checkout@v3
+
+      - name: Lint  
+        run: |
+          cargo fmt -- --check
+          cargo clippy -- -D warnings
+      
+      - name: Test
+        run: |
+          cargo check
+          cargo test --all
+      
+      - name: Build
+        run: |
+          cargo build --release
+      
+      - name: Run
+        run: |
+          cargo run
