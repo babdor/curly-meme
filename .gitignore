@@ -1,0 +1,5 @@
+rust/hello-world/Cargo.lock
+rust/hello-world/debug/
+rust/hello-world/target/
+**/*.rs.bk
+*.pdb
