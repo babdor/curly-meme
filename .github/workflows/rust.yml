@@ -12,10 +12,13 @@ env:
 jobs:
 
   build_hello-world:
+
     defaults:
       run:
         working-directory: rust/hello-world
+
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
 
@@ -27,4 +30,4 @@ jobs:
       - name: Test
         run: |
           cargo check
-          cargo test --all
+          cargo test --al
