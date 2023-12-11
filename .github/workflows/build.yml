@@ -48,4 +48,4 @@ jobs:
         with:
           name: hello-world
           path: |
-            target/release/hello-world
+            rust/hello-world/target/release/hello-world
