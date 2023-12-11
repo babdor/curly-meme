@@ -50,3 +50,14 @@ jobs:
           path: |
             rust/hello-world/target/release/hello-world
 
+      - name: Get binary
+        uses: actions/download-artifact@v3
+        with:
+          name: hello-world
+          path: ./
+
+      - name: Build docker image and push
+        uses: docker/build-push-action@v5
+        with:
+          context: ./
+          file: ./docker/Dockerfile
