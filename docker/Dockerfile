@@ -4,6 +4,6 @@ COPY hello-world /tmp/hello-world
 
 RUN chmod +x /tmp/hello-world
 
-EXPOSE 3030
+EXPOSE 9001
 
 CMD ["/tmp/hello-world"]
