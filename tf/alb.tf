@@ -3,7 +3,7 @@ resource "aws_alb" "alb" {
   internal           = false
   load_balancer_type = "application"
   subnets            = data.aws_subnets.default.ids
-  security_groups  = [
+  security_groups = [
     aws_security_group.egress_all.id,
     aws_security_group.http.id,
   ]
