@@ -3,7 +3,7 @@ rust/hello-world/debug/
 rust/hello-world/target/
 **/*.rs.bk
 *.pdb
-tf/
+terraform
 
 # Local .terraform directories
 **/.terraform/*
@@ -40,3 +40,4 @@ override.tf.json
 .terraformrc
 terraform.rc
 terraform/.terraform.lock.hcl
+tf/.terraform.lock.hcl

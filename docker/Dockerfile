@@ -4,6 +4,6 @@ COPY hello-world ./hello-world
 
 RUN chmod +x ./hello-world
 
-EXPOSE 9001
+EXPOSE 8080
 
 CMD [ "./hello-world" ]
