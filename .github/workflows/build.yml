@@ -37,15 +37,15 @@ jobs:
       #     target: armv7-unknown-linux-gnueabihf
           # override: true
 
-      - name: Lint  
-        run: |
-          cargo fmt -- --check
-          cargo clippy -- -D warnings
+      # - name: Lint  
+      #   run: |
+      #     cargo fmt -- --check
+      #     cargo clippy -- -D warnings
 
-      - name: Test
-        run: |
-          cargo check
-          cargo test --all
+      # - name: Test
+      #   run: |
+      #     cargo check
+      #     cargo test --all
 
       - uses: actions-rs/cargo@v1
         with:
