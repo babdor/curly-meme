@@ -1,11 +1,11 @@
 FROM ubuntu:jammy
 
-WORKDIR /$HOME
+WORKDIR $HOME
 
-COPY hello-world $HOME/hello-world
+COPY hello-world hello-world
 
-RUN chmod +x $HOME/hello-world
+RUN chmod +x hello-world
 
 EXPOSE 8080
 
-CMD [ "$HOME/hello-world" ]
+CMD [ "/root/hello-world" ]

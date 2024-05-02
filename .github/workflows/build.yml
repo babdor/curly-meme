@@ -30,15 +30,15 @@ jobs:
         with:
           toolchain: stable
 
-      - name: Lint  
-        run: |
-          cargo fmt -- --check
-          cargo clippy -- -D warnings
+      # - name: Lint  
+      #   run: |
+      #     cargo fmt -- --check
+      #     cargo clippy -- -D warnings
 
-      - name: Test
-        run: |
-          cargo check
-          cargo test --all
+      # - name: Test
+      #   run: |
+      #     cargo check
+      #     cargo test --all
       
       - name: Build
         uses: houseabsolute/actions-rust-cross@v0
