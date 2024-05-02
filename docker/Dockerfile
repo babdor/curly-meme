@@ -6,4 +6,4 @@ RUN chmod +x /hello-world
 
 EXPOSE 8080
 
-ENTRYPOINT [ "/hello-world", "-l", "-c" ]
+ENTRYPOINT [ "/hello-world", "-c" ]
