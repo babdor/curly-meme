@@ -1,9 +1,11 @@
 FROM ubuntu:jammy
 
-COPY hello-world /hello-world
+WORKDIR /$HOME
 
-RUN chmod +x /hello-world
+COPY hello-world /$HOME/hello-world
+
+RUN chmod +x /$HOME/hello-world
 
 EXPOSE 8080
 
-CMD [ "/hello-world" ]
+CMD [ "/$HOME/hello-world" ]
