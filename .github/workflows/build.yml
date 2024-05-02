@@ -54,7 +54,7 @@ jobs:
         with:
           name: hello-world
           path: |
-            rust/hello-world/target/release/hello-world
+            rust/hello-world/target/aarch64-unknown-linux-gnu/release/hello-world
 
       - name: Log into ghcr.io
         uses: docker/login-action@v2
