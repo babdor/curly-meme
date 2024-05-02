@@ -8,4 +8,4 @@ RUN chmod +x /usr/local/bin/hello-world
 
 EXPOSE 8080
 
-ENTRYPOINT [ "/bin/bash", "hello-world" ]
+ENTRYPOINT [ "/bin/sh", "hello-world" ]
